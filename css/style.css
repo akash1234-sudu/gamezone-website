@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #060714;
+  color: #e5e7eb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: linear-gradient(90deg, #020617, #020617);
+  padding: 25px;
+  text-align: center;
+  border-bottom: 2px solid #22d3ee;
+}
+
+header h1 {
+  color: #22d3ee;
+  font-size: 36px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #cbd5f5;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #facc15;
+}
+
+section p {
+  font-size: 16px;
+  color: #e5e7eb;
+}
+
+footer {
+  background-color: #020617;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+header h1:hover {
+  color: #facc15;
+  transition: 0.3s;
+}
+
+.games {
+  padding: 40px;
+  text-align: center;
+}
+
+.game-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #020617;
+  width: 260px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #22d3ee;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  color: #facc15;
+}
+
+.card p {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .games {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    width: 90%;
+  }
+}
+
+
